@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Compro Project</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="main-container">
+      <div class="side-bar-sort">
+        <div class="side-bar-header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="#656565"
+            class="arrow-left-sort"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+            />
+          </svg>
+          <div class="option-text">Sort by</div>
+        </div>
+        <div class="side-bar-content">
+          <div class="radio-options">
+            <input type="radio" class="radioBtn" />
+            <label>Class name</label>
+          </div>
+          <div class="radio-options">
+            <input type="radio" class="radioBtn" />
+            <label>Start date</label>
+          </div>
+          <div class="radio-options">
+            <input type="radio" class="radioBtn" />
+            <label>End date</label>
+          </div>
+          <div class="horizontal-line-sideBar"></div>
+          <div class="sortby-options">
+            <div class="counter-inc-dec">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="#7c2bf5"
+                class="up-arrow"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#7c2bf5"
+                class="down-arrow"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                />
+              </svg>
+            </div>
+            <div class="sort-category">A-Z</div>
+          </div>
+          <div class="horizontal-line-sideBar"></div>
+        </div>
+        <div class="side-bar-footer">
+          <div class="change-option-text">Filter by</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="#7c2bf5"
+            class="arrow-right-sort"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </div>
+        <div class="side-bar-button">
+          <div class="clear-options-sort">Clear all</div>
+          <button class="apply-btn-sort">Apply</button>
+        </div>
+      </div>
+      <div class="side-bar-filter">
+        <div class="side-bar-header">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="#656565"
+            class="arrow-left-filter"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+            />
+          </svg>
+          <div class="option-text">Filter by</div>
+        </div>
+        <div class="side-bar-content">
+          <!-- HarryPotter -->
+          <div class="checkbox-option">
+            <input type="checkbox" class="checkboxBtn" />
+            <label>No materials</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" class="checkboxBtn" />
+            <label>Harry Potter</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" class="checkboxBtn" />
+            <label>Lord of the Rings</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" class="checkboxBtn" />
+            <label>Books and materials</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" class="checkboxBtn" />
+            <label>Resources</label>
+          </div>
+          <!-- DObby -->
+          <!-- <div class="horizontal-line-sideBar"></div> -->
+          <div class="selectClassKey">
+            <select name="classKey" id="class-key">
+              <option value="book">Class Key</option>
+              <option value="pens">Pens</option>
+              <option value="Pencil">Pencil</option>
+            </select>
+          </div>
+
+          <div class="horizontal-line-sideBar"></div>
+        </div>
+        <div class="side-bar-footer">
+          <div class="change-option-text">Sort by</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="#7c2bf5"
+            class="arrow-right-filter"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </div>
+        <div class="side-bar-button">
+          <div class="clear-options-filter">Clear all</div>
+          <button class="apply-btn-filter">Apply</button>
+        </div>
+      </div>
+      <div class="feedback-column">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="feedback-icon"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
+          />
+          <path
+            d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+        <span>Feedback</span>
+      </div>
+      <header class="navbar">
+        <div class="leftNavbar">
+          <!-- <img class="logo" src="data:image/png;base64,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" alt=""> -->
+          <div class="text-cambridge">CAMBRIDGE</div>
+          <div class="text-uni-press">UNIVERSITY PRESS</div>
+        </div>
+        <div class="rightNavbar">
+          <div class="notification-area">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="notification-bell"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+              />
+            </svg>
+            <span id="notification-bell-badge" class="badge">3</span>
+          </div>
+
+          <div class="user-dropdown">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+              />
+            </svg>
+            <div class="user-name">August</div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-down-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </header>
+      <div class="main-body">
+        <div class="greet-user">
+          <div class="greet-msg">Hi August!</div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="class-desc">
+          <div class="class-category">My classes</div>
+          <div class="clg-name">Aberystwyth college - thor</div>
+        </div>
+
+        <div class="options">
+          <button class="sort-filter-btn">Sort&ensp;/&ensp;Filter</button>
+          <div>Class name(A-Z)&ensp;/&ensp; All Materials</div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-left">
+                <input type="checkbox" class="checkbox" />
+                <div class="class-date">01 Oct</div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </div>
+            <div class="pic-box">
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+            </div>
+            <div class="horizontal-line-card"></div>
+            <div class="bottom-icons">
+              <div id="bottom-left-icon" class="card-bottom-icons">
+                <div id="class-data-icon" class="card-icon-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="data-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"
+                    />
+                  </svg>
+                </div>
+                <label>Class Data</label>
+              </div>
+              <div id="bottom-middle-icon" class="card-bottom-icons">
+                <div id="assignment-icon" class="card-icon-rect">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="bi bi-journal"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"
+                    />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"
+                    />
+                  </svg>
+                </div>
+                <span id="assignment-badge" class="badge">6</span>
+                <label>Assignments</label>
+              </div>
+              <div id="bottom-right-icon" class="card-bottom-icons">
+                <div id="assignment-icon" class="card-icon-rect">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="bi bi-hdd-stack"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+                    />
+                  </svg>
+                </div>
+                <label>Materials</label>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-left">
+                <input type="checkbox" />
+                <div class="class-date">01 Oct</div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </div>
+            <div class="pic-box">
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+            </div>
+            <div class="horizontal-line-card"></div>
+            <div class="bottom-icons">
+              <div id="bottom-left-icon" class="card-bottom-icons">
+                <div id="class-data-icon" class="card-icon-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="data-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"
+                    />
+                  </svg>
+                </div>
+                <label>Class Data</label>
+              </div>
+              <div id="bottom-middle-icon" class="card-bottom-icons">
+                <div id="assignment-icon" class="card-icon-rect">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="bi bi-journal"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"
+                    />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"
+                    />
+                  </svg>
+                </div>
+                <label>Assignments</label>
+              </div>
+              <div id="bottom-right-icon" class="card-bottom-icons">
+                <div id="assignment-icon" class="card-icon-rect">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="bi bi-hdd-stack"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+                    />
+                  </svg>
+                </div>
+                <label>Materials</label>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-left">
+                <input type="checkbox" />
+                <div class="class-date">01 Oct</div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </div>
+            <div class="pic-box">
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+            </div>
+            <div class="horizontal-line-card"></div>
+            <div class="bottom-icons">
+              <div id="bottom-left-icon" class="card-bottom-icons">
+                <div id="class-data-icon" class="card-icon-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="data-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"
+                    />
+                  </svg>
+                </div>
+                <label>Class Data</label>
+              </div>
+              <div id="bottom-middle-icon" class="card-bottom-icons">
+                <div id="assignment-icon" class="card-icon-rect">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="bi bi-journal"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"
+                    />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"
+                    />
+                  </svg>
+                </div>
+                <label>Assignments</label>
+              </div>
+              <div id="bottom-right-icon" class="card-bottom-icons">
+                <div id="assignment-icon" class="card-icon-rect">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="bi bi-hdd-stack"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+                    />
+                  </svg>
+                </div>
+                <label>Materials</label>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-left">
+                <input type="checkbox" />
+                <div class="class-date">01 Oct</div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </div>
+            <div class="pic-box">
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+              <div class="pic-container"></div>
+            </div>
+            <div class="horizontal-line-card"></div>
+            <div class="bottom-icons">
+              <div id="bottom-left-icon" class="card-bottom-icons">
+                <div id="class-data-icon" class="card-icon-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="data-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"
+                    />
+                  </svg>
+                </div>
+                <label>Class Data</label>
+              </div>
+              <div id="bottom-middle-icon" class="card-bottom-icons">
+                <div id="assignment-icon" class="card-icon-rect">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="bi bi-journal"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"
+                    />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"
+                    />
+                  </svg>
+                </div>
+                <label>Assignments</label>
+              </div>
+              <div id="bottom-right-icon" class="card-bottom-icons">
+                <div id="assignment-icon" class="card-icon-rect">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="#7c2bf5"
+                    class="bi bi-hdd-stack"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 10a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1zM2 9a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M5 11.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M14 3a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"
+                    />
+                    <path
+                      d="M5 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-2 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"
+                    />
+                  </svg>
+                </div>
+                <label>Materials</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-card-container">
+          <div class="add-card-container-content">
+            <div class="school-name">Test School 2</div>
+            <div class="information">
+              Start date&nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                />
+              </svg>
+              &nbsp;End date.&nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#b3b3b2"
+                class="information-icon"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                />
+                <path
+                  d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                /></svg>&nbsp; Invite students to your class using the&nbsp;
+              <div class="class-key">Class Key</div>
+            </div>
+            <div class="circle">
+              <div class="big-circle-container">
+                <div class="big-circle"></div>
+              </div>
+              <div class="class-creation">
+                <div class="add-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="#7c2bf5"
+                    class="plus-icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                    />
+                  </svg>
+                </div>
+                <div class="label-desc">
+                  <div class="label-create-class">
+                    Create a <br />
+                    class
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-line-footer"></div>
+
+      <footer class="footer">
+        <div class="leftFooter">
+          <div>Terms of use</div>
+          <div>|</div>
+          <div>Privacy Notice</div>
+          <div>|</div>
+          <div>Accessibility</div>
+          <div>|</div>
+          <div>Experience Better Learning</div>
+          <div>|</div>
+          <div>Site Feedback</div>
+        </div>
+        <div class="rightFooter">
+          <div class="footer-text-box">Cambridge One for schools</div>
+          <div class="copyright">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              fill="currentColor"
+              class="bi bi-c-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"
+              />
+            </svg>
+            <div>Cambridge University press 2022</div>
+          </div>
+          <div class="help-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-question-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"
+              />
+            </svg>
+            <div>Help</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- data:image/png;base64,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 -->
