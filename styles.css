@@ -23,8 +23,6 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  /* overflow: hidden; */
-  /* overflow-y: scroll; */
 }
 html,
 body {
@@ -89,8 +87,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: red; */
-  /* position: relative; */
 }
 
 .notification-area{
@@ -98,7 +94,6 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  /* background-color: yellow; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -115,6 +110,7 @@ body {
     border-radius: 50%;
     background-color: #a81d11;
     color: var(--white);
+    cursor: pointer;
 }
 .user-dropdown {
   display: flex;
@@ -163,6 +159,7 @@ body {
 .greet-user{
     width: 70%;
     padding-left: 3rem;
+    cursor: default;
 
 }
 .greet-msg {
@@ -181,6 +178,7 @@ body {
     width: 70%;
     padding-left: 3rem;
     margin-top: 2.5rem;
+    cursor: default;
 }
 .class-category {
   padding-top: 3rem;
@@ -199,6 +197,7 @@ body {
   padding-left: 3rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 
 }
 
@@ -250,9 +249,13 @@ body {
   font-size: 1.2rem;
   padding: 1.1rem 1rem;
 }
-.checkbox input:checked {
-    border-color: red;
-    background-color:red;
+.class-date{
+  cursor: default;
+}
+
+input[type=checkbox] {
+  accent-color: #7c2bf5;
+  cursor: pointer;
 }
 .card-header-left {
   display: flex;
@@ -287,7 +290,6 @@ body {
   margin: 0.3rem;
 }
 .bottom-icons {
-  /* background-color: red;    */
   width: 100%;
   padding: 0.5rem;
   display: flex;
@@ -327,10 +329,7 @@ body {
   align-items: center;
   border-radius: 5px;
 }
-/* #bottom-middle-icon{
-  height: 30%;
-  position: relative;
-} */
+
 #assignment-badge{
   position: absolute;
   top:0px;
@@ -340,12 +339,13 @@ body {
   background-color: #a81d11;
   color: var(--white);
   z-index: 3;
+  cursor: pointer;
+
 }
 
 .add-card-container {
   width: 70%;
   padding:2rem 3rem;
-  /* background-color: black; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
